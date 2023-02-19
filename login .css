@@ -2,26 +2,28 @@
     margin: 0;
     padding: 0px;
     background-color: black;
+    background-image: url("photos/Astro.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-position: right;   
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex:50%;
+    /* border: 2px solid green; */
 }
 .logo{
-    height: 2rem;
-    width: 1rem;
-    padding-top: 20px;
-    padding-left: 15px;
+    padding: 15px;
 }
 .login{
-  
-   
-        padding-left: 6rem;
-        /* margin-top: 4px; */
-        padding-top: 8rem;
-        flex: auto;
-       border: 2px solid black;
-       /* margin-top: 10px; */
-       display: flex;
-       flex-direction: column;
-      
+       padding-left: 6rem;
+       padding-top: 1.5rem;
+       /* border: 2px solid red; */
 }
+
 .txt{
     font-size: 30px;
     text-align: left;
@@ -76,39 +78,163 @@ input[type=em]
     
 }
 .extra{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 10px;
 }
 .f{
-    border-radius: 10px;
-    background-color:rgb(247, 220, 71); /* Green */
+    border-radius: 22px;
+    background:linear-gradient(-45deg, #ee691e 25%, #f2b834 100%);
   border: none;
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 53px;
-  padding-right: 43px;
+  padding-left: 63px;
+  padding-right: 63px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
-  margin: 15px 1.5px;
+  margin:4px;
   cursor: pointer;
   margin-left: 6rem;
 }
   .f1{
-    border-radius: 10px;
-    background-color:rgb(247, 220, 71); /* Green */
+    border-radius: 22px;
+    background:linear-gradient(-45deg, #ee691e 25%, #f2b834 100%);
   border: none;
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 53px;
+  padding-left: 43px;
   padding-right: 43px;
-  /* padding: 13px; */
+ 
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
-  margin: 15px 1.5px;
+  margin: 10px;
   cursor: pointer;
-  margin-left: 5rem;}
+  margin-left: 5rem;
+}
+.psw{
+    padding-left: 6rem;
+}
+
+@media screen and (max-width: 600px)
+{
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex:50%;
+        /* border: 2px solid green; */
+        background-image: url("photos/Astro.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
+    .logo{
+        padding: 15px;
+    }
+    .login{
+           padding-left: 6rem;
+           padding-top: 1.5rem;
+           /* border: 2px solid red; */
+    }
+    
+    .txt{
+        font-size: 20px;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        font-weight: 15px;
+        padding-bottom: 1rem;
+    }
+    .txt1{
+        font-size: 20px;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        font-weight: 15px;
+    }
+    input[type=text] 
+    {
+            width: 60%;
+            padding: 10px 12px;
+            margin: 4px 0;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 22px;
+            /* background-color: #15140F; */
+            color: #ADADAF;
+    }
+    input[type=password] 
+    {
+        width: 60%;
+        padding: 10px 12px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 22px;
+        background-color: #15140F;
+        color:#ADADAF;
+        
+        
+    }
+    input[type=em] 
+    {
+        width: 60%;
+        padding: 10px 12px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 22px;
+        background-color: #15140F;
+        color:#ADADAF;
+        
+    }
+    .extra{
+        padding-top: 1.5rem;
+        padding-bottom: 6px;
+    }
+    .f{
+        border-radius: 10px;
+        background:linear-gradient(-45deg, #ee691e 25%, #f2b834 100%);
+      border: none;
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 63px;
+      padding-right: 63px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin:4px;
+      cursor: pointer;
+      margin-left: 2rem;
+    }
+      .f1{
+        border-radius: 10px;
+        background:linear-gradient(-45deg, #ee691e 25%, #f2b834 100%);
+      border: none;
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 43px;
+      padding-right: 43px;
+      /* padding: 13px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 10px;
+      cursor: pointer;
+      margin-left: 1.5rem;
+    }
+    .psw{
+        padding-left: 1.5rem;
+    }
+}
